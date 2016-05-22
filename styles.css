@@ -58,6 +58,7 @@ a {
   text-decoration: none;
   font-family: Tahoma;
   color: black;
+  border-style: solid;
 }
 
 a:link, a:visited {
