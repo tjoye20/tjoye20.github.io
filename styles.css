@@ -6,9 +6,13 @@ body {
   margin: 0;
 }
 
-.class-pic img {
+#picture {
   width: 100%;
   position: relative;
+}
+
+.class-pic {
+  margin: 0;
 }
 
 .header {
@@ -43,10 +47,71 @@ h3 {
 
 .about {
   background:  #ff9900;
-
+  font-size: 20px;
 }
 
 .curr {
   background:  #ffff66;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  font-family: Tahoma;
+  color: black;
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+a:hover, a:active {
+  color: red;
+}
+
+.Sign-up-form {
+  background: #ff9900;
+  font-size: 20px;
+}
+
+.Sign-up-form p {
+  text-align: center;
+  font-size: 24px;
+
+}
+
+.Sign-up-form form {
+  background: #ffff66;
+  padding: 3%;
+}
+
+.contact-us {
+  background: #ffff66;
+  font-size: 20px;
+}
+
+.contact-us form {
+  background: #ff9900;
+  padding: 3%;
+}
+
+footer {
+  background: #ff9900;
+
+}
+
+footer p {
+  margin: 0;
+  padding: 2%;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+ #picture {
+   width: 70%;
+ }
+
+body {
+  font-size: 3em;
+}
 
 }
