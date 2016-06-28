@@ -126,4 +126,17 @@ a:hover, a:active {
 }
 @media screen and (min-width: 768px) {/*for laptops and desktops*/
 /*write CSS code for this layout size*/
+.class-pic h1 {
+  position: absolute;
+  top: 140px;
+  left: 278px;
+  color: #f0f0f5;
+}
+
+.class-pic p {
+  position: absolute;
+  top: 170px;
+  left: 225px;
+  color:  #ff471a;
+}
  }
