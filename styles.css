@@ -25,15 +25,19 @@ h1, p, h3 {
 
 .class-pic h1 {
   position: absolute;
-  top: 60px;
-  left: 78px;
+  /*top: 60px;
+  left: 78px; */
+  top: 14%;
+  left:40%;
   color: #f0f0f5;
 }
 
 .class-pic p {
   position: absolute;
-  top: 90px;
-  left: 25px;
+  /*top: 90px;
+  left: 25px;*/
+  top: 18%;
+  left: 25%;
   color:  #ff471a;
 }
 
