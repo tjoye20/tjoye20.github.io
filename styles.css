@@ -34,7 +34,7 @@ p, a {
   font-size: 26px;
   top: 14%;
   left:40%;
-  color: #f0f0f5;
+  color: #e6e6ff;
 }
 h3 {
   font-size: 20px;
@@ -129,8 +129,7 @@ a:hover, a:active {
   top: 18%;
   left: 36%;
   font-size: 38px;
-
-  color: #f0f0f5;
+  color: #e6e6ff;
 }
 
 .class-pic p {
@@ -155,8 +154,8 @@ p, a {
   /*top: 140px;
   left: 278px;*/
   font-size: 40px;
-  top: 23%;
-  color: #f0f0f5;
+  top: 25%;
+  color: #e6e6ff;
 }
 
 .class-pic p {
