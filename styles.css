@@ -1,8 +1,20 @@
-* {
-    box-sizing: border-box;
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+/* Mobile-first . I used a viewport of
+400px as my estimate.*/
+section, footer {
+  width: 100%;
 }
 
 body {
+  margin: 0;
+}
+
+h1, p, h3 {
   margin: 0;
 }
 
@@ -11,54 +23,80 @@ body {
   position: relative;
 }
 
-.class-pic {
-  margin: 0;
-}
-
-.header {
-  z-index: 1;
+.class-pic h1 {
   position: absolute;
-  top: 210px;
-  left: 20%;
-  color: gold;
+  top: 60px;
+  left: 105px;
+  color: #f0f0f5;
 }
 
-.header h1 {
-  font-size: 120px;
-  color: gold;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.header p {
-  text-align: center;
-  margin-top: 0;
-  font-size: 30px;
-}
-
-.about, .curr, .Sign-up-form, .contact-us {
-  padding: 3% 20%;
-}
-
-h3 {
-  text-align: center;
-  font-size: 30px;
+.class-pic p {
+  position: absolute;
+  top: 90px;
+  left: 95px;
+  color:  #ff471a;
 }
 
 .about {
-  background:  #ff9900;
-  font-size: 20px;
+  padding: 5% 0 5% 3.5%;
+  background: #f0f0f5
+}
+
+.about h3 {
+  text-align: center;
 }
 
 .curr {
-  background:  #ffff66;
-  font-size: 20px;
+  padding: 5% 0 5% 3.5%;
+  background: silver;
 }
+
+.curr h3 {
+  text-align: center;
+}
+
+.blog {
+  padding: 5% 0 5% 3.5%;
+  background: #f0f0f5;
+}
+
+.blog h3 {
+  text-align: center;
+}
+
+.Sign-up-form {
+  padding: 5% 0 5% 3.5%;
+  background: silver;
+}
+
+.Sign-up-form h3 {
+  text-align: center;
+}
+
+.Sign-up-form form {
+  padding: 5% 0 5% 0;
+}
+
+.contact-us {
+  padding: 5% 0 5% 3.5%;
+  background: #f0f0f5;
+}
+
+.contact-us h3 {
+  text-align: center;
+}
+
+.contact-us form {
+  padding: 5% 0 5% 0;
+}
+
+footer {
+  padding: 5% 0 5% 3.5%;
+  background: grey;
+}
+
 a {
   text-decoration: none;
-  font-family: Tahoma;
-  color: black;
-  border-style: solid;
 }
 
 a:link, a:visited {
@@ -66,53 +104,13 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  color: red;
+  color: yellow;
 }
 
-.Sign-up-form {
-  background: #ff9900;
-  font-size: 20px;
+
+@media screen and (min-width: 600px) {/* For tablets and up.*/
+/*write CSS code for this layout size*/
 }
-
-.Sign-up-form p {
-  text-align: center;
-  font-size: 24px;
-
-}
-
-.Sign-up-form form {
-  background: #ffff66;
-  padding: 3%;
-}
-
-.contact-us {
-  background: #ffff66;
-  font-size: 20px;
-}
-
-.contact-us form {
-  background: #ff9900;
-  padding: 3%;
-}
-
-footer {
-  background: #ff9900;
-
-}
-
-footer p {
-  margin: 0;
-  padding: 2%;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 600px) {
- #picture {
-   width: 70%;
+@media screen and (min-width: 768px) {/*for laptops and desktops*/
+/*write CSS code for this layout size*/
  }
-
-body {
-  font-size: 3em;
-}
-
-}
