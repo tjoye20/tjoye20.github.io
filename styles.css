@@ -76,30 +76,28 @@ h3 {
   text-align: center;
 }
 
-.Sign-up-form {
+.buttons {
+  margin: 0 auto;
   padding: 3% 0 3% 2.5%;
   background: silver;
+
 }
 
-.Sign-up-form h3 {
+.buttons a {
+  display: block;
   text-align: center;
+  margin: 5% auto;
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: 30%;
 }
 
-.Sign-up-form form {
-  padding: 5% 0 5% 0;
+.buttons a:link, .buttons a:visited {
+  color: black;
 }
 
-.contact-us {
-  padding: 3% 0 3% 2.5%;
-  background: #f0f0f5;
-}
-
-.contact-us h3 {
-  text-align: center;
-}
-
-.contact-us form {
-  padding: 5% 0 5% 0;
+.buttons a:hover, .buttons a:active {
+  background-color: #ff471a;
 }
 
 footer {
