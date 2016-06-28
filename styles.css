@@ -27,28 +27,47 @@ p, a {
   position: relative;
 }
 
+.text {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  color: #ffff00;
+}
+
+.text h1 {
+  font-size: 26px;
+}
+
+.text p {
+  font-size: 18px;
+
+}
+/*
 .class-pic h1 {
   position: absolute;
   /*top: 60px;
-  left: 78px; */
+  left: 78px;
   font-size: 26px;
   top: 14%;
   left:40%;
   color: #e6e6ff;
 }
+
+*/
 h3 {
   font-size: 20px;
 }
+/*
 .class-pic p {
   position: absolute;
   /*top: 90px;
-  left: 25px;*/
+  left: 25px;
   font-size: 18px;
   top: 18%;
   left: 25%;
   color:  #ff471a;
 }
-
+*/
 .about {
   padding: 3% 0 3% 2.5%;
   background: #f0f0f5
@@ -97,7 +116,7 @@ h3 {
 }
 
 .buttons a:hover, .buttons a:active {
-  background-color: #ff471a;
+  background-color: #b3b3cc;
 }
 
 footer {
