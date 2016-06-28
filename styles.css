@@ -18,6 +18,10 @@ h1, p, h3 {
   margin: 0;
 }
 
+p, a {
+  font-size: 18px;
+}
+
 #picture {
   width: 100%;
   position: relative;
@@ -27,6 +31,7 @@ h1, p, h3 {
   position: absolute;
   /*top: 60px;
   left: 78px; */
+  font-size: 26px;
   top: 14%;
   left:40%;
   color: #f0f0f5;
@@ -36,6 +41,7 @@ h1, p, h3 {
   position: absolute;
   /*top: 90px;
   left: 25px;*/
+  font-size: 18px;
   top: 18%;
   left: 25%;
   color:  #ff471a;
@@ -116,15 +122,21 @@ a:hover, a:active {
 /*write CSS code for this layout size*/
 .class-pic h1 {
   position: absolute;
-  top: 100px;
-  left: 178px;
+  /*top: 100px;
+  left: 178px;*/
+  top: 18%;
+  left: 36%;
+  font-size: 38px;
+
   color: #f0f0f5;
 }
 
 .class-pic p {
   position: absolute;
-  top: 130px;
-  left: 125px;
+  /*top: 130px;
+  left: 125px;*/
+  font-size: 26px;
+  top: 25%;
   color:  #ff471a;
 }
 }
@@ -132,15 +144,19 @@ a:hover, a:active {
 /*write CSS code for this layout size*/
 .class-pic h1 {
   position: absolute;
-  top: 140px;
-  left: 278px;
+  /*top: 140px;
+  left: 278px;*/
+  font-size: 40px;
+  top: 23%;
   color: #f0f0f5;
 }
 
 .class-pic p {
   position: absolute;
-  top: 170px;
-  left: 225px;
+  /*top: 170px;
+  left: 225px;*/
+  font-size: 30px;
+  top: 32%;
   color:  #ff471a;
 }
  }
