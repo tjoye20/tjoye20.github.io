@@ -5,19 +5,69 @@
   <meta name="viewport" content="width=device-width">
   <title>ROOTs Technology</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2/semantic.min.js"></script>
+    <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
 </head>
 <body>
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <a class="active item">Home</a>
+      <a class="item" href="http://medium.com/@tjoye20" target="_blank">Blog</a>
+      <a class="item" href="https://docs.google.com/document/d/1N8Y6lvOFL5tNww_wBZtD_jvli2344aNwGO7HlWmAP_w/edit?usp=sharing" target="_blank">Learn to Code</a>
+      <div class="right menu">
+        <div class="item">
+          <a class="ui primary button" href="https://goo.gl/forms/1ozBqyVfphunpqeB2" target="_blank">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item" href="http://medium.com/@tjoye20" target="_blank">Blog</a>
+    <a class="item" href="https://docs.google.com/document/d/1N8Y6lvOFL5tNww_wBZtD_jvli2344aNwGO7HlWmAP_w/edit?usp=sharing" target="_blank">Learn to Code</a>
+    <a class="item" href="https://goo.gl/forms/1ozBqyVfphunpqeB2" target="_blank">Contact Us</a>
+  </div>
+
   <!-- Page Contents -->
   <div class="pusher">
     <div class="ui inverted vertical masthead center aligned segment">
-
       <div class="ui container">
         <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="active item">Home</a>
+        <a class="item" href="http://medium.com/@tjoye20" target="_blank">Blog</a>
+        <a class="item" href="https://docs.google.com/document/d/1N8Y6lvOFL5tNww_wBZtD_jvli2344aNwGO7HlWmAP_w/edit?usp=sharing" target="_blank">Learn to Code</a>
           <div class="right item">
-            <!-- <a class="ui inverted button" href="#" target="_blank">Donate</a> -->
-            <a class="ui inverted button" onclick="message()">Sign Up</a>
             <a class="ui inverted button" href="https://goo.gl/forms/1ozBqyVfphunpqeB2" target="_blank">Contact Us</a>
           </div>
         </div>
@@ -27,85 +77,43 @@
         <h1 class="ui inverted header">
           ROOTS TECHNOLOGY
         </h1>
-        <h2>CREATING SPACE FOR PEOPLE OF COLOR IN TECHNOLOGY</h2>
-        <a onclick="message()"><div class="ui huge primary button">Sign Up <i class="right arrow icon"></i></div> </a>
+        <h2>Bringing ideas to life.</h2>
+        <a href="https://goo.gl/forms/1ozBqyVfphunpqeB2" target="_blank"><div class="ui huge primary button">Contact Us <i class="right arrow icon"></i></div></a>
       </div>
-
     </div>
 
     <div class="ui vertical stripe segment">
       <div class="ui middle aligned stackable grid container">
         <div class="row">
           <div class="eight wide column">
-            <h3 class="ui header">About Us</h3>
-            <p>ROOTs Technology is a community curated by people of color, for people of color who want to learn the basics of web development.</p>
-            <p>
-              "You can't be what you can't see," and for so long, Black and Brown people have been underrepresented in the tech industry, which is why ROOTs Technology is dedicated to mentoring its students with other professionals of color that work in the technology industry, helping change the narrative of under-representation in software development.
-            </p>
-            <h3 class="ui header">What We Do</h3>
-            <p>Students will be given a self-paced curriculum to follow, and are assigned a mentor that they're required to work on a project with three times a week, for an hour.</p>
-            <p>
-              This ensures that the student is staying on track, and has a mentor avaiable to ask questions to.
-            </p>
+            <h3 class="ui header">Partners From Conception To Reality.</h3>
+            <p>We walk through your idea with you, helping you determine your core business needs and Minimum Viable Product (MVP) needed to get to market quickly.</p>
+
+            <h3 class="ui header">Proven Track Record.</h3>
+            <p>Our team has a proven track record helping to build products at some of the top startups in Austin, from cybersecurity to e-commerce platforms.</p>
           </div>
           <div class="six wide right floated column">
-            <img src="roots.jpg" class="ui large bordered rounded image">
+            <img src="bulb.jpg" class="ui large bordered rounded image">
           </div>
         </div>
         <div class="row">
           <div class="center aligned column">
-            <a class="ui huge button" href="https://docs.google.com/document/d/1N8Y6lvOFL5tNww_wBZtD_jvli2344aNwGO7HlWmAP_w/edit?usp=sharing" target="_blank">Our Curriculum</a>
+            <a class="ui huge button" href="https://goo.gl/forms/1ozBqyVfphunpqeB2" target="_blank">Get Started</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="ui vertical stripe segment">
-      <div class="ui text container">
-        <h3 class="ui header">Our Blog</h3>
-        <p>Follow our writings on various topics pertaining to the technology industry, as well as software development tutorials.</p>
-        <a class="ui large button" href="https://medium.com/@tjoye20" target="_blank">Blog</a>
-        <h4 class="ui horizontal header divider">
-          <a href="#">Frequently Asked Questions</a>
-        </h4>
-        <h3 class="ui header">How much is the course?</h3>
-        <p>The course is absolutely FREE! All you need is access to a laptop with a video camera, and internet access.</p>
-        <h3 class="ui header">What programming languages will I learn?</h3>
-        <p>
-          Please refer to our <a href="https://github.com/tjoye20/Self-Paced-Coding-Curriculum" target="_blank">curriculum.</a>
-        </p>
-
-        <h3 class="ui header">How does the program work?</h3>
-        <p>
-          Once admitted into the program, you will be assigned a mentor that you're responsible for setting up Google Hangout sessions with three times a week for an hour. During your scheduled session with your mentor, you will work on a pre-determined project or exercise set. On your own time though, you're expected to be working on the self-paced curriculum provided you. The mentor session will also be used to gauge your progress.
-        </p>
-
-        <h3 class="ui header">Who is your target audience?</h3>
-        <p>
-          Our primary focus is on underrepesented racial minorities in the technology industry, Hispanics and African-Americans. </p>
-        <h3 class="ui header">When does the program start? When does it end?</h3>
-        <p>
-          The program starts as soon as we find a mentor to assign to you, and it ends when you and your mentor have finished all the assigned projects and exercises. Note: you're free to leave the program at any time. Also, any students that miss more than three mentor sessions, and/or are not keeping up with the curriculum, will be asked to leave the program.
-        </p>
-      </div>
-    </div>
     <div class="ui inverted vertical footer segment">
       <div class="ui container">
         <div class="ui stackable inverted divided equal height stackable grid">
           <div class="seven wide column">
             <h4 class="ui inverted header">&copy ROOTS Technology</h4>
-            <!-- <p>Extra space for a call to action inside the footer that could help re-engage users.</p> -->
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script>
-    function message() {
-      alert("Sorry, we are not taking sign-ups anymore. But feel free to get started on the curriculum.");
-    }
-
-  </script>
 </body>
 </html>
