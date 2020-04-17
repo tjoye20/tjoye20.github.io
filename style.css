@@ -25,6 +25,10 @@
     font-weight: 400;
     margin-bottom: 30px;
   }
+  p { 
+    font-size: 18px;
+    color: #303030;
+  }
   .jumbotron {
     background-color: #343634;
     color: #fff;
