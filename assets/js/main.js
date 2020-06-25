@@ -137,7 +137,10 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
+    nav: true,
+    autoplayTimeout: 5500,
+    autoplayHoverPause: true
   });
 
   // Porfolio isotope and filter
@@ -167,7 +170,10 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
+    nav: true,
+    autoplayTimeout: 5500,
+    autoplayHoverPause: true
   });
 
 })(jQuery);
