@@ -139,7 +139,7 @@
     loop: true,
     items: 1,
     nav: true,
-    autoplayTimeout: 5500,
+    autoplayTimeout: 6000,
     autoplayHoverPause: true
   });
 
